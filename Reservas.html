@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Contacto</title>
-        <link rel="icon" href="imagenes/lepere-micrologo.ico" type="image/x-icon ">
-        <link rel="stylesheet" href="sty_ubi.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+        <title>Reservas</title>
+        <link rel="icon" href="imagenes\lepere-micrologo.ico" type="image/x-icon ">
+        <link rel="stylesheet" href="sty_resv.css">
     </head>
-    <body style="background-repeat: no-repeat; background-attachment: fixed; background-size: cover;" background="imagenes/lepere fondo claro.png" bgcolor="#7e0808" text="#53170b" link="#582a0f" alink="#5e1f1f" vlink="#3b1109">
+    <body style="background-repeat: no-repeat; background-attachment: fixed;" background="imagenes/lepere fondo claro.png" bgcolor="DARKRED" text="#53170b" link="#582a0f" alink="#5e1f1f" vlink="#3b1109">
     <header>
-        
         <nav class="navmenu">
             <div class="marca">
                 <div class="logo"><a href="index.html"><img src="imagenes/lepere logo blanco.png" width="120px" title="Logo Lepere Pizza"></a></div>
@@ -31,40 +28,46 @@
             </ul>
         </nav>
     </header>
-    <div class="contenido">    
+<body>
+    
+    
+ <div class="contform">
+        <form action="https://formspree.io/f/mdkzdjzq" method="POST" class="form">
+            <h2>Realice reservas de productos</h2>
 
-        <div class="container">
-            <div class="divframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.862022774236!2d-57.644866699999994!3d-25.308839399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d07ce709f7c7d%3A0x7f4c311e9b22489c!2sPizza%20lepere!5e0!3m2!1ses!2spy!4v1750013318691!5m2!1ses!2spy" 
-                width="95%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="divtxt">
-                <h1>Lepere Pizza</h1>
-                <h2>¿Dónde estamos?</h2>
-                <p>Nos encontramos en Antequera c/ Picada Diarte</p>
-                <p>Horarios: Lunes a Viernes de 17hs a 23:30hs <br> Sabado y Domingo de 17hs a 00:30hs</p>
-                <p>Teléfono: 0981 527270</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="servicios">
-                <h2>Que ofrecemos?</h2>
-                <ul>
-                    <li>Entrega a domicilio</li>
-                    <li>Para llevar</li>
-                    <li>Consumo en el lugar</li>
-                    <li>Sanitario</li>
-                    <li>Ideal para ir con niños</li>
-                </ul>
-            </div>
-            <div class="imagenes">
-                <h2>Conocé nuestro local</h2>
-                <img src="imagenes/frente-local1.png" height="350" style="border-radius: 20px;">
-            </div>
-        </div>
-        
+                <label>Nombre y Apellido:</label>
+                <input type="text" name="nombreyapellido" required><br>
 
-        
-        <footer> 
+                <label>Teléfono:</label>
+                <input type="tel" name="telefono" pattern="\09\d{6,8}" placeholder="09xx xxx xxx"required> <br>
+
+                
+                <label for="personas">Seleccionar producto:</label>
+                            <select id="personas" name="personas" required>
+                                <option value="">Seleccionar</option>
+                                <option value="1">Pizzas</option>
+                                <option value="2">Hamburguesas</option>
+                                <option value="3">Minutas</option>
+                                <option value="4">Bebidas</option>
+                            </select>
+
+                <label>Cantidad:</label>
+                <input type="number" name="Cantidad" required><br>
+               
+                <label>Fecha:</label>
+                <input type="date" name="Cantidad" required><br>
+
+
+                <label>Mensaje Adicional:</label>
+                <textarea id="comentario" name="comentario" rows="5" cols="35" required></textarea><br>
+
+            <button type="submit">Enviar</button>
+
+            <h3>Nos pondremos en contacto con usted para detallar el pedido</h3>
+        </form>
+        </div>
+
+                <footer> 
             <div class="footeerdiv"> 
                 <div class="ftrwp">
                     <img src="imagenes/lepere_whatsapp.jpeg" width="100px">
@@ -88,6 +91,5 @@
                
             </div>
         </footer>
-    </div> 
-    </body>
+</body>
 </html>
