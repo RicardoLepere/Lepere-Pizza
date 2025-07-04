@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4633c94;
+    padding: 15px;
+    border-radius: 20px;
+}
+.marca {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    background-color: #742b19cc;
+    border-radius: 50%;
+}
+.title {
+    align-content: center;
+    
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d3785c94;
+    display: flex;
+    justify-content: space-between;
+
+}
+.title h2 {
+    background-color: #e4633c94;
+    color: #e7c1b7;
+    margin: 30px;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    background-color: #b95419e0;
+    padding: 15px;
+    border-radius: 15px;
+    list-style-type: none;
+    margin-inline-end: 15px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+    color: #fccdb1;
+    padding: 10PX;
+    display: block;
+    text-decoration: none;
+    font-size:large;
+    font-weight: bold;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #a34f1f;
+    border-radius: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    padding: 5px;
+}
+.despl:hover .submenu {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.menu a:hover, .submenu a:hover {
+    background-color: #c94f2a;
+    border-radius: 15px;
+    color: white;
+}
+
+.div_tit_tb {
+    background-color: #e4633c94;
+    width: fit-content;
+    margin: 20px auto; /* esto centra horizontalmente */
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cont_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 85%;
+    justify-self: center;
+    margin: 40px;
+}
+
+.producto {
+    flex-basis: 23%;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #742b19cc;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    
+}
+.producto img {
+      width: 95%;
+      height: 85%;
+      object-fit: cover;
+      display: block;
+      overflow: hidden;
+      transition: 0.3 ease;
+      margin: 5px;
+      border-radius: 20px;
+      position: relative;
+    }
+.producto:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+.producto:hover .overlay {
+  bottom: 0;
+  opacity: 1;
+}
+
+.info {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info p {
+    font: bold;
+    font-family:cursive;
+    padding: 15px;
+    margin-top: 3px;
+    color: #ffca85;
+    
+}
+.img-over {
+  position: relative;
+  height: 85%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-over img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.producto:hover .img-over img {
+  transform: scale(1.005);
+}
+
+.img-over .overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  color: white;
+  font-size: small;
+  padding: 12px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: bottom 0.4s ease, opacity 0.4s ease;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.producto:hover .imagen-wrapper .overlay {
+  bottom: 0;
+  opacity: 1;
+}
+
+
+.footeerdiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    background-color: #9c2f11b4;
+    padding: 15px 5px;
+    border-radius: 20px;
+}
+
+.ftrwp, .ftrfb, .ftrcorreo {
+    display: flex;
+    align-items: center;
+    background-color: #db611ac9;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    
+}
+.ftrwp a, .ftrfb a, .ftrcorreo a {
+    background-color: #8b310dc0;
+    padding: 5px;
+    border-radius: 5px;
+    color: #dda482;
+    font-size: 20px;
+}
+.ftrwp a, .ftrfb a, .ftrcorreo a,
+.ftrwp h4, .ftrfb h4, .ftrcorreo h4 {
+    padding: 0px 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.ftrcopy {
+    width: 100%;
+    text-align: center;
+    color: #4b1905;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ftrcopy p {
+    font-size: 15px;
+}
