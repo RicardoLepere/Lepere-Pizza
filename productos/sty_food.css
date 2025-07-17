@@ -1,5 +1,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #dda482;
+    background-image: url("../imagenes/lepere fondo claro.png");
 }
 
 .navmenu {

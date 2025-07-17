@@ -1,12 +1,12 @@
 html, body {
     font-family: 'Poppins', sans-serif;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
     margin: 0;
     background-color: #dda482;
-    background: url(imagenes/lepere\ fondo\ claro.png);
+    background-image: url("imagenes/lepere fondo claro.png");
 }
 
 
