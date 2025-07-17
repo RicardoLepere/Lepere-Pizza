@@ -5,7 +5,10 @@ html, body {
     background-size: cover;
     height: 100%;
     margin: 0;
+    background-color: #dda482;
+    background: url(imagenes/lepere\ fondo\ claro.png);
 }
+
 
 body {
     display: flex;
