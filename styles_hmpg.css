@@ -164,7 +164,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; 
-
+    background-color: #9c2f11b4;
     padding: 15px 5px;
     border-radius: 20px;
 }
