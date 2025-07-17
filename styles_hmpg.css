@@ -129,6 +129,7 @@ body {
 
 .carousel {
   width: 800px;      /* ajusta el ancho a las imágenes */
+  min-height: 450px ;
   overflow: hidden;
   position: relative;
 }
@@ -137,22 +138,14 @@ body {
 .carousel-track {
     display: flex;
     width: calc(800px);         /* width for 3 slides */
-    animation: slide 60s infinite alternate;  /* forward then backward */
+    animation: slide 45s infinite alternate;  /* forward then backward */
 }
 
 /* Forward sequence; the reverse is handled by animation-direction: alternate */
 @keyframes slide {
-    /* slide 1 – remain from 0s to ~10s */
-    0%, 16.6%   { transform: translateX(0); }
-
-    /* slide 2 – move and stay from ~10s to ~20s */
-    20%, 50%    { transform: translateX(-100%); }
-
-    /* slide 3 – move and stay from ~20s to ~30s */
-    53.3%, 83.3% { transform: translateX(-200%); }
-
-    /* keep the last slide so the animation reverses smoothly */
-    100%        { transform: translateX(-200%); }
+    0%, 22.2%   { transform: translateX(0); }        /* ~10 s */
+    26.6%, 48.8% { transform: translateX(-100%); }   /* ~10 s */
+    53.3%, 100%  { transform: translateX(-200%); }   /* ~15 s */
 }
 
 
