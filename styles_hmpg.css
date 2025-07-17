@@ -118,6 +118,10 @@ body {
     border-radius: 20px;
 }
 
+.containercarousel {
+    justify-content: center;
+}
+
 .carousel {
   width: 300px;      /* ajusta el ancho a las imágenes */
   overflow: hidden;
