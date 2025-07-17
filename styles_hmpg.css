@@ -118,43 +118,30 @@ body {
     border-radius: 20px;
 }
 
-
-.controls {
-  position: absolute;
-  width: 100%;
-  top: 0; left: 0;
-  height: 100%;
-  pointer-events: none; /* Sólo los labels reaccionan al clic */
+.carousel {
+  width: 300px;      /* ajusta el ancho a las imágenes */
+  overflow: hidden;
+  position: relative;
 }
 
-.next {
-  display: none;
-  pointer-events: auto;       /* Reactiva el clic sólo en labels */
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 8px 12px;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
+.carousel-track {
+  display: flex;
+  width: calc(300px * 3); /* 3 imágenes de 300px cada una */
+  animation: slide 15s infinite;
 }
 
-/* Mostrar el label correcto según el radio marcado */
-#s1:checked ~ .controls .next1,
-#s2:checked ~ .controls .next2,
-#s3:checked ~ .controls .next3 {
-  display: block;
+.carousel img {
+  width: 300px;
+  flex-shrink: 0;
 }
 
-/* Tus reglas actuales de slider */
-.slider { position: relative; width: 500px; height: 400px; overflow: hidden; }
-.slides { display: flex; transition: transform 0.5s; }
-.slide  { min-width: 100%; background: lightgray; text-align: center; line-height: 200px; }
-#s1:checked ~ .slides { transform: translateX(0);    }
-#s2:checked ~ .slides { transform: translateX(-100%);}
-#s3:checked ~ .slides { transform: translateX(-200%);}
+/* Animación de desplazamiento automático */
+@keyframes slide {
+  0%, 20%  { transform: translateX(0); }
+  33%, 53% { transform: translateX(-100%); }
+  66%, 86% { transform: translateX(-200%); }
+  100%     { transform: translateX(0); }
+}
 
 
 
