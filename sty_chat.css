@@ -83,6 +83,12 @@ body {
 }
 
 .menu a:hover, .submenu a:hover {
+    background: linear-gradient(
+    to right,
+    rgba(228,99,60,0)      0%,
+    rgba(255, 159, 104, 0.58)  50%,
+    rgba(228,99,60,0)    100%
+  );
     background-color: #c94f2a;
     border-radius: 15px;
     color: white;
@@ -173,7 +179,7 @@ label {
     flex: 1 1 200px;
     
 }
-.ftrwp a, .ftrfb a, .ftrcorreo a {
+.footerlink {
     background-color: #8b310dc0;
     padding: 5px;
     border-radius: 5px;

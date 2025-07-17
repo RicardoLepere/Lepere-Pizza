@@ -24,7 +24,7 @@
                     </ul>
                         
                 </li> 
-                <li><a href="quienes_somos.html">Quiénes Somos?</a></li>
+                <li><a href="quienes_somos.html">¿Quiénes Somos?</a></li>
                 <li><a href="chat.html">Recomendaciones</a></li>
                 <li><a href="ubicacion.html">Ubicación</a></li>
                 <li><a href="Reservas.html">Reservas</a></li>
@@ -35,47 +35,57 @@
         <br>
         <br>
         <br>
-        <center><div style="padding: 15px; color: rgb(174, 107, 107); background-color: #370904; border-radius: 10px; width: fit-content; "><p><font size="6" face="Times new roman" color="#ffffff" >
-            Recomendaciones del día!</center></font></p></h2></div></center>
-        <center>
-        <div style="display: inline-flex; gap: 50px; margin: 50px;">
-            <div style="text-align: center; color: rgb(174, 107, 107); background-color: rgba(0, 0, 0, 0.5); border-radius: 5px; ">
-                <img src="imagenes/pikasasa/Pizza_Peppe.jpeg" width="200px" title="Pizza de Pepperoni" class="img1"><br>
-                Pizza de Pepperoni
-            </div>
-            <div style="text-align: center; color: rgb(174, 107, 107); background-color: rgba(0, 0, 0, 0.5); border-radius: 5px;">
-                <img src="imagenes/pikasasa/Pizza_Muzza.jpg" width="200px" title="Pizzas de Muzarella" class="img2"><br>
-                Pizzas de Muzzarella 
-            </div>
-            <div style="text-align: center; color: rgb(174, 107, 107); background-color: rgba(0, 0, 0, 0.5); border-radius: 5px;">
-                <img src="imagenes/pikasasa/lomipizza.jpg" width="200px" title="Lomi-Pizza" class="img3"> <br>
-                Lomi-Pizza
-            </div>
+        <div class="tit_div"><h2>¡Recomendaciones del día!</h2></div>
+        
+        <div style="display: flex; gap: 50px; margin: 50px; justify-content: center; align-content: center;">
+            <div class="slider">
+  <input type="radio" name="slide" id="s1" checked>
+  <input type="radio" name="slide" id="s2">
+  <input type="radio" name="slide" id="s3">
+
+  <div class="slides">
+    <div class="slide s1"><img src="imagenes/pikasasa/Pizza_Peppe.jpeg" width="250px" ></div>
+    <div class="slide s2"><img src="imagenes/hamburguesas/hambur_bacon.png" width="250px"></div>
+    <div class="slide s3"><img src="imagenes/minutas/sandiwch_milanesa_pollo.jpg" width="250px"></div>
+  </div>
+
+  <div class="navigation">
+    <label for="s1">1</label>
+    <label for="s2">2</label>
+    <label for="s3">3</label>
+  </div>
+
+  <!-- Controles “Next” puros con labels -->
+  <div class="controls">
+    <label class="next next1" for="s2">Siguiente</label>
+    <label class="next next2" for="s3">Siguiente</label>
+    <label class="next next3" for="s1">Siguiente</label>
+  </div>
+</div>
         </div> 
-        </center>
+        
             
         <footer> 
             <div class="footeerdiv"> 
                 <div class="ftrwp">
-                    <img src="imagenes/lepere_whatsapp.jpeg" width="100px">
-                    <div><a href="https://wa.link/vdt821" target="_blank">Enviános un Mensaje!</a><br>
-                    <h4>"Buenas, quiero hacer un pedido!"</h4></div>
+                    <a href="https://wa.link/vdt821" target="_blank"><img src="/imagenes/lepere_whatsapp.jpeg" width="100px"></a>
+                    <div ><a class="footerlink" href="https://wa.link/vdt821" target="_blank">¡Envíanos un Mensaje!</a><br>
+                    <h4>"¡Buenas, quiero hacer un pedido!"</h4></div>
                 </div>
                 <div class="ftrfb">
-                    <img src="imagenes/Lepere-facebook-redondo.png" width="100px">
-                    <div><a href="https://www.facebook.com/share/1ENqPwhkTt/" target="_blank">Seguínos en Facebook!</a><br>
-                    <h4>No te pierdas de novedades!</h4></div>
+                    <a href="https://www.facebook.com/share/1ENqPwhkTt/" target="_blank"><img src="/imagenes/Lepere-facebook-redondo.png" width="100px"></a>
+                    <div><a class="footerlink" href="https://www.facebook.com/share/1ENqPwhkTt/" target="_blank">¡Seguínos en Facebook!</a><br>
+                    <h4>¡No te pierdas de novedades!</h4></div>
                 </div>
                 <div class="ftrcorreo">
-                    <img src="imagenes/lepere_whatsapp1.png" width="100px">
-                    <div><a href="mailto:leperepizza@gmail.com">Correo Electronico</a><br>
-                    <h4>Mandános tus sugerencias!</h4></div>
+                    <a href="mailto:leperepizza@gmail.com"><img src="/imagenes/lepere_mail.png" width="100px"></a>
+                    <div><a class="footerlink" href="mailto:leperepizza@gmail.com">Correo Electrónico</a><br>
+                    <h4>¡Mandanos tus sugerencias!</h4></div>
                 </div>
                 <div class="ftrcopy">
-                    &copy; 2025 Lepere Pizza. Todos los derechos reservados.
+                    &copy; 2025 Lepere Pizza. Todos los derechos reservados. <br>
+                    <p>Imágenes referenciales</p>
                 </div>
-
-               
             </div>
         </footer>
 

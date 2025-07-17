@@ -2,6 +2,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.tit_div {
+    background-color: #e4633c94;
+    width: fit-content;
+    margin: 20px auto; /* esto centra horizontalmente */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #f3ceb9;
+    background: linear-gradient(
+    to right,
+    rgba(228,99,60,0)      0%,
+    rgba(255, 123, 46, 0.58)  50%,
+    rgba(228,99,60,0)    100%)
+    
+}
 .navmenu {
     display: flex;
     align-items: center;
@@ -83,6 +98,12 @@ body {
 }
 
 .menu a:hover, .submenu a:hover {
+    background: linear-gradient(
+    to right,
+    rgba(228,99,60,0)      0%,
+    rgba(255, 159, 104, 0.58)  50%,
+    rgba(228,99,60,0)    100%
+  );
     background-color: #c94f2a;
     border-radius: 15px;
     color: white;
@@ -91,6 +112,45 @@ body {
 .img1, .img2, .img3 {
     border-radius: 20px;
 }
+
+
+.controls {
+  position: absolute;
+  width: 100%;
+  top: 0; left: 0;
+  height: 100%;
+  pointer-events: none; /* Sólo los labels reaccionan al clic */
+}
+
+.next {
+  display: none;
+  pointer-events: auto;       /* Reactiva el clic sólo en labels */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Mostrar el label correcto según el radio marcado */
+#s1:checked ~ .controls .next1,
+#s2:checked ~ .controls .next2,
+#s3:checked ~ .controls .next3 {
+  display: block;
+}
+
+/* Tus reglas actuales de slider */
+.slider { position: relative; width: 500px; height: 400px; overflow: hidden; }
+.slides { display: flex; transition: transform 0.5s; }
+.slide  { min-width: 100%; background: lightgray; text-align: center; line-height: 200px; }
+#s1:checked ~ .slides { transform: translateX(0);    }
+#s2:checked ~ .slides { transform: translateX(-100%);}
+#s3:checked ~ .slides { transform: translateX(-200%);}
+
 
 
 
@@ -114,12 +174,11 @@ body {
     flex: 1 1 200px;
     
 }
-.ftrwp a, .ftrfb a, .ftrcorreo a {
+.footerlink {
     background-color: #8b310dc0;
     padding: 5px;
     border-radius: 5px;
     color: #dda482;
-    font-size: 20px;
 }
 .ftrwp a, .ftrfb a, .ftrcorreo a,
 .ftrwp h4, .ftrfb h4, .ftrcorreo h4 {
