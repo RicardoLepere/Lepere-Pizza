@@ -132,11 +132,13 @@ body {
   min-height: 450px ;
   overflow: hidden;
   position: relative;
+  border-radius: 20px;
 }
 
 .carousel img {
     width: 800px;              /* ajustado a tu contenido */
     height: auto;              /* usa la altura real */
+    border-radius: 20px;
 }
 
 /* Carousel container */
