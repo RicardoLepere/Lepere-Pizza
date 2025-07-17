@@ -136,7 +136,7 @@ body {
 /* Carousel container */
 .carousel-track {
     display: flex;
-    width: calc(800px * 3);         /* width for 3 slides */
+    width: calc(800px);         /* width for 3 slides */
     animation: slide 60s infinite alternate;  /* forward then backward */
 }
 
