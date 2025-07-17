@@ -123,12 +123,12 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 300px;
+    width: 800px;
     background-color: #e7c1b786;
 }
 
 .carousel {
-  width: 300px;      /* ajusta el ancho a las imágenes */
+  width: 800px;      /* ajusta el ancho a las imágenes */
   overflow: hidden;
   position: relative;
 }
@@ -136,7 +136,7 @@ body {
 /* Carousel container */
 .carousel-track {
     display: flex;
-    width: calc(300px * 3);         /* width for 3 slides */
+    width: calc(800px * 3);         /* width for 3 slides */
     animation: slide 60s infinite alternate;  /* forward then backward */
 }
 
