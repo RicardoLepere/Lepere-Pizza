@@ -98,22 +98,40 @@ body {
     color: white;
 }
 
-.lep,
-.mision,
-.vision {
-    display: flex;               /* o inline-flex si lo prefieres */
-    align-items: center;         
+.lep {
+    align-items: center;
     text-align: center;
-    flex-direction: row;         /* imagen a la izquierda, texto a la derecha */
-    justify-content: center;     /* centra ambos ejes si sobra espacio */
-    flex-wrap: wrap; 
+    background-color: #ee7e3d;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    margin: 25px;
+    width: 80%;
+}
+
+.mision {
+    align-items: center;
+    text-align: center;
     background-color: #ee7e3d;
     border-radius: 20px;
     padding: 15px;
-    width: 80%;                  /* ancho fijo relativo al contenedor */
-    margin: 25px auto;           /* 25px arriba y abajo, auto a los lados */
+    display: flex;
+    margin: 25px;
+    width: 80%;
 }
 
+.vision {
+    align-items: center;
+    text-align: center;
+    background-color: #ee7e3d;
+    display: flex;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    width: 80%;
+
+}
 .lep h2,
 .mision h1,
 .vision h1 {
