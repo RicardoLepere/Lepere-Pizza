@@ -36,11 +36,11 @@ body {
 
 }
 .title h2 {
-    background-color: #e4633c94;
     color: #e7c1b7;
     margin: 30px;
     border-radius: 15px;
     padding: 10px 20px;
+    font-size: xx-large;
 }
 
 .menu {
