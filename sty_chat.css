@@ -99,8 +99,19 @@ body {
     color: white;
 }
 
-.img1, .img2, .img3 {
+.div_tit_tb {
+    background-color: #e4633c94;
+    width: fit-content;
+    margin: 20px auto; /* esto centra horizontalmente */
+    padding: 20px;
     border-radius: 20px;
+    text-align: center;
+      background: linear-gradient(
+    to right,
+    rgba(228,99,60,0)      0%,
+    rgba(255, 123, 46, 0.58)  50%,
+    rgba(228,99,60,0)    100%
+  );
 }
 
 .contform{
