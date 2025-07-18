@@ -98,63 +98,33 @@ body {
     color: white;
 }
 
-.lep {
-    align-items: center;
-    text-align: center;
-    background-color: #ee7e3d;
-    display: inline-block;
-    border-radius: 20px;
-    padding: 15px;
-    display: flex;
-    margin: 25px;
-    width: 80%;
-}
-.lep h2 {
-    background-color: #ec8869;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 15px;
-}
-.lep p {
-    font-weight: bolder;
-    font-size: larger
-}
-
-
-.mision {
-    align-items: center;
-    text-align: center;
-    background-color: #ee7e3d;
-    border-radius: 20px;
-    padding: 15px;
-    display: flex;
-    margin: 25px;
-    width: 80%;
-}
-.mision h1 {
-    background-color: #ec88696c;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 15px;
-}
-.mision p {
-    font-weight: bolder;
-    font-size: larger
-}
-
+.lep,
+.mision,
 .vision {
-    align-items: center;
+    display: flex;               /* o inline-flex si lo prefieres */
+    flex-direction: column;      /* apilar imagen, título y texto en columna */
+    align-items: center;         /* centra el contenido interno */
     text-align: center;
+
     background-color: #ee7e3d;
-    display: flex;
     border-radius: 20px;
     padding: 15px;
-    margin: 25px;
-    width: 80%;
-
+    width: 80%;                  /* ancho fijo relativo al contenedor */
+    margin: 25px auto;           /* 25px arriba y abajo, auto a los lados */
 }
+
+/* Opcional: si quieres conservar el layout horizontal imagen + texto */
+.lep,
+.mision,
+.vision {
+    flex-direction: row;         /* imagen a la izquierda, texto a la derecha */
+    justify-content: center;     /* centra ambos ejes si sobra espacio */
+    flex-wrap: wrap;             /* baja en pantallas pequeñas */
+}
+
+/* Encabezados dentro de cada bloque */
+.lep h2,
+.mision h1,
 .vision h1 {
     background-color: #ec88696c;
     padding: 10px;
@@ -162,10 +132,15 @@ body {
     border-radius: 20px;
     margin: 15px;
 }
+
+/* Párrafos */
+.lep p,
+.mision p,
 .vision p {
     font-weight: bolder;
-    font-size: larger
+    font-size: larger;
 }
+
 
 
 
