@@ -105,6 +105,7 @@ body {
     display: inline-block;
     border-radius: 20px;
     padding: 15px;
+    display: flex;
 }
 .lep h2 {
     background-color: #ec8869;
@@ -122,10 +123,10 @@ body {
     align-items: center;
     text-align: center;
     background-color: #ee7e3d;
-    
     border-radius: 20px;
     padding: 15px;
     width: 35%;
+    display: flex;
 }
 .mision h1 {
     background-color: #ec88696c;
@@ -142,7 +143,7 @@ body {
     align-items: center;
     text-align: center;
     background-color: #ee7e3d;
-    
+    display: flex;
     border-radius: 20px;
     padding: 15px;
     width: 35%;
@@ -158,6 +159,9 @@ body {
     font-weight: bolder;
     font-size: larger
 }
+
+
+
 
 
 .footeerdiv {
