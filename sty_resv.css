@@ -195,6 +195,7 @@ select, option {
     background-color: #9c2f11b4;
     padding: 15px 5px;
     border-radius: 20px;
+    margin-top: 10%;
 }
 
 .ftrwp, .ftrfb, .ftrcorreo {
