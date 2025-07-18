@@ -114,6 +114,7 @@ body {
     padding: 10px;
     display: inline-block;
     border-radius: 20px;
+    margin: 15px;
 }
 .lep p {
     font-weight: bolder;
@@ -136,6 +137,7 @@ body {
     padding: 10px;
     display: inline-block;
     border-radius: 20px;
+    margin: 15px;
 }
 .mision p {
     font-weight: bolder;
@@ -158,11 +160,13 @@ body {
     padding: 10px;
     display: inline-block;
     border-radius: 20px;
+    margin: 15px;
 }
 .vision p {
     font-weight: bolder;
     font-size: larger
 }
+
 
 
 
