@@ -102,8 +102,7 @@ body {
 .mision,
 .vision {
     display: flex;               /* o inline-flex si lo prefieres */
-    flex-direction: column;      /* apilar imagen, título y texto en columna */
-    align-items: center;         /* centra el contenido interno */
+    align-items: center;         
     text-align: center;
 
     background-color: #ee7e3d;
