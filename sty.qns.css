@@ -104,7 +104,9 @@ body {
     display: flex;               /* o inline-flex si lo prefieres */
     align-items: center;         
     text-align: center;
-
+    flex-direction: row;         /* imagen a la izquierda, texto a la derecha */
+    justify-content: center;     /* centra ambos ejes si sobra espacio */
+    flex-wrap: wrap; 
     background-color: #ee7e3d;
     border-radius: 20px;
     padding: 15px;
@@ -112,16 +114,6 @@ body {
     margin: 25px auto;           /* 25px arriba y abajo, auto a los lados */
 }
 
-/* Opcional: si quieres conservar el layout horizontal imagen + texto */
-.lep,
-.mision,
-.vision {
-    flex-direction: row;         /* imagen a la izquierda, texto a la derecha */
-    justify-content: center;     /* centra ambos ejes si sobra espacio */
-    flex-wrap: wrap;             /* baja en pantallas pequeñas */
-}
-
-/* Encabezados dentro de cada bloque */
 .lep h2,
 .mision h1,
 .vision h1 {
@@ -132,7 +124,7 @@ body {
     margin: 15px;
 }
 
-/* Párrafos */
+
 .lep p,
 .mision p,
 .vision p {
